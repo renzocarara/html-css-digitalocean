@@ -119,8 +119,16 @@ footer {
 /* media query */
 /* da 768px insu */
 @media screen and (min-width:768px) {
+
     /* jumbo: testo +form affiancati */
     /* background da blu a immagine */
+    #jumbo {
+        background-image: url(https://www.digitalocean.com/assets//media/homepage/bg-home-1-d54581d7.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        /* min-height: 800px; */
+    }
+
     /* 6loghi da 3righe di 2 colonne a 1riga di 6 colonne */
     /* sezione deploy da menu e contenuto incolonnati ad affiancati */
 }
