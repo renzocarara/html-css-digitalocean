@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: #4e5f83;
 }
 
 /* general */
@@ -31,6 +31,14 @@ h2 {
 
 .fz20 {
     font-size: 20px;
+}
+
+.fz30 {
+    font-size: 30px;
+}
+
+.fw-bold {
+    font-weight: bold;
 }
 
 .text-white {
@@ -103,8 +111,18 @@ h2 {
     display: inline-block;
 }
 
-/* #signup-btn{background-color: #0069ff; */
-/* } */
+.signup-btn {
+    border: 1px solid #0069ff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#bottom-right .signup-btn:hover {
+    background-color: #0069ff;
+    border-color: #0069ff;
+    color: white;
+}
+
 #navbar-hamburger {
     height: 90px;
     padding: 32px 20px;
@@ -147,7 +165,22 @@ h2 {
 
 /* section get-started */
 #get-started {
-    height: 300px;
+    height: 245px;
+    background-image: url(https://www.digitalocean.com/assets//media/homepage/bg-home-1-d54581d7.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+#get-started .signup-btn {
+    padding: 16px 32px;
+}
+
+#get-started .signup-btn:hover {
+    background-color: hsla(0, 0%, 100%, .8);
+    border-color: #0069ff;
+    color: #0069ff;
 }
 
 /* footer */
