@@ -12,6 +12,11 @@ h2 {
     font-size: 36px;
 }
 
+/* .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
 .fz14 {
     font-size: 14px;
 }
@@ -61,6 +66,14 @@ h2 {
 }
 
 /* header */
+.svg-color-white {
+    fill: white;
+}
+
+.svg-color-blue {
+    fill: #0248FF;
+}
+
 #navbar-inline {
     /* height: 105px; */
     display: none;
@@ -71,10 +84,27 @@ h2 {
     line-height: 40px;
 }
 
-#navbar-bottom {
-    height: 65px;
+#top-right ul {
+    margin: 0;
 }
 
+#navbar-bottom {
+    height: 65px;
+    line-height: 65px;
+}
+
+/* allineo verticalmente il logo col testo a destra */
+#bottom-left svg {
+    vertical-align: text-bottom;
+}
+
+/* linearizzo il menu */
+#bottom-left ul {
+    display: inline-block;
+}
+
+/* #signup-btn{background-color: #0069ff; */
+/* } */
 #navbar-hamburger {
     height: 90px;
     padding: 32px 20px;
