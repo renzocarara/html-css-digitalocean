@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* general */
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.fz14 {
+    font-size: 14px;
+}
+
+.fz16 {
+    font-size: 16px;
+}
+
+.fz18 {
+    font-size: 20px;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-gray {
+    color: #4e5f83;
+}
+
+.text-lightblue {
+    color: #0069ff;
+}
+
+.bg-gray {
+    background-color: #F3F5F9;
+}
+
+.bg-blue {
+    background-color: #0248FF;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+/* header */
+#navbar-inline {
+    height: 105px;
+    display: none;
+}
+
+#navbar-hamburger {
+    height: 90px;
+    padding: 32px 20px;
+}
+
+/* section jumbo */
+#jumbo {
+    height: 300px;
+}
+
+/* section logolist */
+#logolist {
+    height: 300px;
+}
+
+/* section deploy */
+#deploy {
+    height: 300px;
+}
+
+/* section developers */
+#developers {
+    height: 300px;
+}
+
+/* section built */
+#built {
+    height: 300px;
+}
+
+/* section service */
+#service {
+    height: 300px;
+}
+
+/* section development */
+#development {
+    height: 300px;
+}
+
+/* section get-started */
+#get-started {
+    height: 300px;
+}
+
+/* footer */
+footer {
+    height: 300px;
+}
+
+/* media query */
+/* da 768px insu */
+@media screen and (min-width:768px) {
+    /* jumbo: testo +form affiancati */
+    /* background da blu a immagine */
+    /* 6loghi da 3righe di 2 colonne a 1riga di 6 colonne */
+    /* sezione deploy da menu e contenuto incolonnati ad affiancati */
+}
+
+/* da 960px in su */
+@media screen and (min-width:960px) {
+    /* footer da 2 a 5 colonne */
+    /* tabella services da 1 a 2 colonne */
+    /* sezione built da 2 a 4 colonne */
+}
+
+/* da 1050px in su */
+@media screen and (min-width:1050px) {
+
+    /* menu da hamburger a esteso */
+    #navbar-inline {
+        display: block;
+    }
+
+    #navbar-hamburger {
+        display: none;
+    }
+}
