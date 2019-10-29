@@ -62,8 +62,17 @@ h2 {
 
 /* header */
 #navbar-inline {
-    height: 105px;
+    /* height: 105px; */
     display: none;
+}
+
+#navbar-top {
+    height: 40px;
+    line-height: 40px;
+}
+
+#navbar-bottom {
+    height: 65px;
 }
 
 #navbar-hamburger {
@@ -143,11 +152,12 @@ footer {
 /* da 1050px in su */
 @media screen and (min-width:1050px) {
 
-    /* menu da hamburger a esteso */
+    /* menu da hamburger a inline */
     #navbar-inline {
         display: block;
     }
 
+    /* hambueger lascia posto a inline menu */
     #navbar-hamburger {
         display: none;
     }
