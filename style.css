@@ -124,20 +124,8 @@ h2 {
     margin: 0;
 }
 
-#top-left {
+#top-left, #bottom-left, #top-right, #bottom-right {
     margin-left: 30px;
-}
-
-#bottom-left {
-    margin-left: 30px;
-}
-
-#top-right {
-    margin-right: 30px;
-}
-
-#bottom-right {
-    margin-right: 30px;
 }
 
 #top-left .label {
@@ -259,6 +247,21 @@ h2 {
 
 #deploy-container {
     max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#deploy-list li {
+    border-left: 2px solid #e5e8ed;
+    display: block;
+    padding: 17px 10px 17px 30px;
+    font-size: 16px;
+}
+
+#deploy-list li:first-child {
+    border-left: 2px solid #0069ff;
 }
 
 /* section developers */
@@ -273,6 +276,10 @@ h2 {
 
 /* section service */
 #service {
+    background: #031b4e url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 300px;
 }
 
@@ -312,7 +319,7 @@ footer {
     /* ------------------------------------------- */
     /* ---------- CUSTOM FRAMEWORK --------------- */
     /* ------------------------------------------- */
-    /* breakpoint 480px in su */
+    /* valido da 480px fino a 767px */
     .container {
         max-width: 840px;
     }
@@ -339,9 +346,6 @@ footer {
         background-repeat: no-repeat;
         /* min-height: 800px; */
     }
-
-    /* 6loghi da 3righe di 2 colonne a 1riga di 6 colonne */
-    /* sezione deploy da menu e contenuto incolonnati ad affiancati */
 }
 
 /* da 960px in su */
@@ -376,7 +380,7 @@ footer {
     }
 
     #free-banner {
-        /* spazio il free-banner dalla fixed bar che è apparsa sopra a lui */
+        /* spazio tra il free-banner e la fixed bar */
         margin-top: 30px;
     }
 }
