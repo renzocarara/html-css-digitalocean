@@ -240,7 +240,11 @@ h2 {
 
 /* section logolist */
 #logolist {
-    height: 300px;
+    padding: 32px;
+}
+
+#logolist-link {
+    padding-top: 32px;
 }
 
 /* section deploy */
