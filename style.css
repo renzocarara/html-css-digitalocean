@@ -9,9 +9,9 @@ header {
     /* height: 105px; */
     position: fixed;
     top: 0;
-    /* left: 0; */
+    left: 0;
     width: 100%;
-    /* z-index: 10; */
+    z-index: 10;
 }
 
 /* general */
@@ -48,8 +48,16 @@ h2 {
     font-size: 20px;
 }
 
+.fz24 {
+    font-size: 20px;
+}
+
 .fz30 {
     font-size: 30px;
+}
+
+.fz40 {
+    font-size: 40px;
 }
 
 .fw-bold {
@@ -195,9 +203,39 @@ h2 {
     padding: 32px 20px;
 }
 
+#hamburger {
+    color: rgb(124, 151, 209);
+}
+
 /* section jumbo */
 #jumbo {
-    height: 300px;
+    padding-bottom: 64px;
+}
+
+#free-banner a {
+    color: #fff;
+}
+
+#free-banner {
+    width: 100%;
+    max-width: 1168px;
+    background-color: #00b47b;
+    border: 1px solid #009969;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    padding: 8px 16px;
+    text-align: center;
+    /* margin-bottom: 25px; */
+}
+
+#deploy-form {
+    padding: 32px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#deploy-form h2 {
+    padding-bottom: 20px;
 }
 
 /* section logolist */
@@ -281,14 +319,13 @@ footer {
 
 /* da 1050px in su */
 @media screen and (min-width:1050px) {
-
-    /* menu da hamburger a inline */
     #navbar-inline {
+        /* menu da hamburger a inline */
         display: block;
     }
 
-    /* hamburger lascia posto a inline menu */
     #navbar-hamburger {
+        /* hamburger lascia posto a inline menu */
         display: none;
     }
 
@@ -296,5 +333,10 @@ footer {
         /* appare la fixed bar occorre un offset per evitare lo "scivolamento" */
         /* della sezione jumbo sotto alla fixed bar */
         padding-top: 105px;
+    }
+
+    #free-banner {
+        /* spazio il free-banner dalla fixed bar che è apparsa sopra a lui */
+        margin-top: 30px;
     }
 }
