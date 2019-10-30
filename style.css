@@ -248,8 +248,10 @@ h2 {
 }
 
 /* section deploy */
-#deploy {
-    height: 300px;
+#deploy {}
+
+#deploy-container {
+    max-width: 1200px;
 }
 
 /* section developers */
@@ -298,6 +300,27 @@ footer {
 }
 
 /* media query */
+@media screen and (min-width:481px) {
+
+    /* ------------------------------------------- */
+    /* ---------- CUSTOM FRAMEWORK --------------- */
+    /* ------------------------------------------- */
+    /* breakpoint 480px in su */
+    .container {
+        max-width: 840px;
+    }
+
+    .my-col-6 {
+        width: 50%;
+    }
+
+    .my-col-12 {
+        width: 100%;
+    }
+
+    /* ------------------------------------------- */
+}
+
 /* da 768px in su */
 @media screen and (min-width:768px) {
 
