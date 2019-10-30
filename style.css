@@ -212,10 +212,6 @@ h2 {
     padding-bottom: 64px;
 }
 
-#free-banner a {
-    color: #fff;
-}
-
 #free-banner {
     width: 100%;
     max-width: 1168px;
@@ -225,7 +221,10 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
     padding: 8px 16px;
     text-align: center;
-    /* margin-bottom: 25px; */
+}
+
+#free-banner a {
+    color: #fff;
 }
 
 #deploy-form {
@@ -241,6 +240,14 @@ h2 {
 /* section logolist */
 #logolist {
     padding: 32px;
+}
+
+#logolist img {
+    width: 75%;
+    margin: 0 auto;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
 }
 
 #logolist-link {
@@ -300,7 +307,7 @@ footer {
 }
 
 /* media query */
-@media screen and (min-width:481px) {
+@media screen and (min-width:481px) and (max-width:767px) {
 
     /* ------------------------------------------- */
     /* ---------- CUSTOM FRAMEWORK --------------- */
@@ -342,6 +349,12 @@ footer {
     /* footer da 2 a 5 colonne */
     /* tabella services da 1 a 2 colonne */
     /* sezione built da 2 a 4 colonne */
+}
+
+@media screen and (min-width:992px) {
+    #deploy .container {
+        width: 750px;
+    }
 }
 
 /* da 1050px in su */
