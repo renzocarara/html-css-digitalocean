@@ -1,6 +1,17 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #4e5f83;
+    max-width: 100%;
+}
+
+header {
+    background-color: #fff;
+    /* height: 105px; */
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    /* z-index: 10; */
 }
 
 /* general */
@@ -17,6 +28,10 @@ h2 {
     display: table;
     clear: both;
 } */
+.fz12 {
+    font-size: 12px;
+}
+
 .fz14 {
     font-size: 14px;
 }
@@ -87,13 +102,54 @@ h2 {
     display: none;
 }
 
+#navbar-inline a {
+    text-decoration: none;
+}
+
 #navbar-top {
     height: 40px;
     line-height: 40px;
+    border-bottom: 1px solid lightgrey;
 }
 
 #top-right ul {
     margin: 0;
+}
+
+#top-left {
+    margin-left: 30px;
+}
+
+#bottom-left {
+    margin-left: 30px;
+}
+
+#top-right {
+    margin-right: 30px;
+}
+
+#bottom-right {
+    margin-right: 30px;
+}
+
+#top-left .label {
+    font-size: 10px;
+    background-color: #00d7d2;
+    color: #031b4e;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+#top-left a, #top-right a {
+    color: #4e5f83;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+#bottom-left a:hover,
+#top-left a:hover {
+    color: #0069ff;
 }
 
 #navbar-bottom {
@@ -109,6 +165,17 @@ h2 {
 /* linearizzo il menu */
 #bottom-left ul {
     display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+#top-right ul li,
+#bottom-left ul li {
+    padding-left: 20px;
+}
+
+#bottom-left a {
+    color: #000000;
 }
 
 .signup-btn {
@@ -189,7 +256,7 @@ footer {
 }
 
 /* media query */
-/* da 768px insu */
+/* da 768px in su */
 @media screen and (min-width:768px) {
 
     /* jumbo: testo +form affiancati */
@@ -220,8 +287,14 @@ footer {
         display: block;
     }
 
-    /* hambueger lascia posto a inline menu */
+    /* hamburger lascia posto a inline menu */
     #navbar-hamburger {
         display: none;
+    }
+
+    #jumbo {
+        /* appare la fixed bar occorre un offset per evitare lo "scivolamento" */
+        /* della sezione jumbo sotto alla fixed bar */
+        padding-top: 105px;
     }
 }
