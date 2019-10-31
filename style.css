@@ -328,11 +328,36 @@ h2 {
 
 /* section service */
 #service {
+    padding: 60px 0;
     background: #031b4e url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+}
+
+#service h2 {
+    padding-bottom: 50px;
+}
+
+#service [class^="col-xs-"] {
+    border: 1px solid yellow;
+}
+
+#service [class^="col-xs-2"] {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+}
+
+#service a {
+    font-size: 13px;
+    color: #00d7d2;
+}
+
+[class^="col-xs-7"] {
+    font-size: 13px;
+    color: white;
+    opacity: 0.6;
 }
 
 /* section development */
@@ -352,6 +377,10 @@ h2 {
 #development .container>p {
     display: inline-block;
     max-width: 970px;
+}
+
+#development .container>div {
+    position: relative;
 }
 
 #development .jumbotron {
@@ -452,6 +481,9 @@ footer {
         margin-right: 20px;
         color: gray;
         font-size: 50px;
+        /* position: absolute;
+        top: calc((100% - 100px) / 2); */
+        /* left: 10px; */
     }
 
     .right-angle-after::after {
@@ -460,6 +492,8 @@ footer {
         margin-left: 20px;
         color: black;
         font-size: 50px;
+        /* position: absolute;
+        top: calc((100% - 100px) / 2); */
     }
 }
 
