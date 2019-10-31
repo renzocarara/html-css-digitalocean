@@ -96,6 +96,19 @@ h2 {
     background-color: #000;
 }
 
+.empty-circle {
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #0069ff;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+.fill-circle {
+    background-color: #0069ff;
+}
+
 /* header */
 .svg-color-white {
     fill: white;
@@ -282,7 +295,6 @@ h2 {
     max-width: 740px;
     width: 100%;
     margin: 0 auto;
-    /* height: 40px; */
     object-fit: contain;
     object-position: center;
 }
@@ -293,19 +305,6 @@ h2 {
 
 #developers p:nth-child(4) {
     margin: 20px 0 40px 0;
-}
-
-#developers .my-circle {
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid #0069ff;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-}
-
-#developers .my-fill-circle {
-    background-color: #0069ff;
 }
 
 /* section built */
@@ -336,7 +335,46 @@ h2 {
 
 /* section development */
 #development {
-    height: 300px;
+    padding: 120px 0;
+}
+
+#development h2 {
+    padding-bottom: 30px;
+}
+
+#development img {
+    width: 175px;
+    height: 25px;
+}
+
+#development .container>p {
+    display: inline-block;
+    max-width: 970px;
+}
+
+#development .jumbotron {
+    display: inline-block;
+    max-width: 740px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+#development .jumbotron p:nth-child(2) {
+    padding: 20px;
+    font-size: 24px;
+}
+
+#development .jumbotron p:nth-child(3) {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#development .jumbotron p:nth-child(4) {
+    font-size: 12px;
+}
+
+#development .jumbotron a:nth-child(5) {
+    font-size: 16px;
 }
 
 /* section get-started */
@@ -401,7 +439,12 @@ footer {
         max-width: 80%;
     }
 
-    #developers .carousel-img::before {
+    #development .jumbotron {
+        max-width: 80%;
+        width: 696px;
+    }
+
+    .left-angle-before::before {
         content: "<";
         display: inline-block;
         margin-right: 20px;
@@ -409,7 +452,7 @@ footer {
         font-size: 50px;
     }
 
-    #developers .carousel-img::after {
+    .right-angle-after::after {
         content: ">";
         display: inline-block;
         margin-left: 20px;
