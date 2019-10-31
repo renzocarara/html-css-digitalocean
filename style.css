@@ -124,8 +124,12 @@ h2 {
     margin: 0;
 }
 
-#top-left, #bottom-left, #top-right, #bottom-right {
+#top-left, #bottom-left {
     margin-left: 30px;
+}
+
+#top-right, #bottom-right {
+    margin-right: 30px;
 }
 
 #top-left .label {
@@ -271,7 +275,7 @@ h2 {
 
 /* section built */
 #built {
-    height: 300px;
+    padding: 60px 0;
 }
 
 /* section service */
