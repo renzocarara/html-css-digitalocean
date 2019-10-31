@@ -278,6 +278,18 @@ h2 {
     padding: 60px 0;
 }
 
+#built .row div {
+    padding-top: 30px;
+}
+
+#built img {
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    object-fit: contain;
+    object-position: left;
+}
+
 /* section service */
 #service {
     background: #031b4e url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
