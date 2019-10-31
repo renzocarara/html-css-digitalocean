@@ -339,25 +339,38 @@ h2 {
     padding-bottom: 50px;
 }
 
-#service [class^="col-xs-"] {
-    border: 1px solid yellow;
+#service hr {
+    margin: 10px 0;
+    opacity: 0.4;
+    width: 100%;
+    background-color: lightgray;
 }
 
-#service [class^="col-xs-2"] {
-    font-size: 13px;
+#service [class^="col-xs-3"].text-left {
     color: white;
     font-weight: bold;
 }
 
-#service a {
-    font-size: 13px;
+#service [class^="col-xs-3"] {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#service [class^="col-xs-6"] {
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    opacity: 0.6;
+}
+
+#service a, #service i {
+    text-decoration: none;
+    font-size: 14px;
     color: #00d7d2;
 }
 
-[class^="col-xs-7"] {
-    font-size: 13px;
-    color: white;
-    opacity: 0.6;
+#service .row .row {
+    padding: 15px;
 }
 
 /* section development */
