@@ -260,7 +260,9 @@ h2 {
 }
 
 /* section deploy */
-#deploy {}
+#deploy {
+    margin: 120px 0 60px 0;
+}
 
 #deploy-container {
     max-width: 1200px;
