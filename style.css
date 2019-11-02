@@ -4,7 +4,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #4e5f83;
-    max-width: 100%;
 }
 
 header {
@@ -34,10 +33,6 @@ h2 {
 
 .fz16 {
     font-size: 16px;
-}
-
-.fz18 {
-    font-size: 20px;
 }
 
 .fz20 {
@@ -92,10 +87,15 @@ h2 {
     background-color: #000;
 }
 
-.blu-nodec-link:hover {
+.blu-nodec-link {
     text-decoration: none;
     font-size: 16px;
     color: #0069ff;
+}
+
+.blu-nodec-link:hover {
+    text-decoration: none;
+    color: #005fe6;
 }
 
 .circle {
@@ -240,7 +240,6 @@ h2 {
 
 #deploy-form p:not(last-child) {
     font-size: 16px;
-    /* position: relative; */
 }
 
 #deploy-form p:last-child {
@@ -290,6 +289,7 @@ input::placeholder {
     white-space: nowrap;
 }
 
+/* linee orizzontali a fianco del testo  */
 #signup-text div {
     display: inline-block;
     position: relative;
@@ -338,11 +338,6 @@ input::placeholder {
 
 #logolist-link {
     padding-top: 32px;
-}
-
-#logolist-link a {
-    font-size: 16px;
-    color: #0069ff;
 }
 
 /* **************** */
@@ -422,11 +417,6 @@ input::placeholder {
     object-position: left;
 }
 
-#built a {
-    font-size: 16px;
-    color: #0069ff;
-}
-
 /* **************** */
 /* section service */
 /* **************** */
@@ -497,12 +487,6 @@ input::placeholder {
     max-width: 970px;
 }
 
-#development .container>p a {
-    text-decoration: underline;
-    font-size: 20px;
-    color: #0069ff;
-}
-
 #development .container>div {
     position: relative;
 }
@@ -526,11 +510,6 @@ input::placeholder {
 
 #development .jumbotron p:nth-child(4) {
     font-size: 12px;
-}
-
-#development .jumbotron a {
-    font-size: 16px;
-    color: #0069ff;
 }
 
 /* **************** */
@@ -604,7 +583,6 @@ footer ul li:first-child {
 
 #footer-bottom .row>div p {
     line-height: 40px;
-    /* margin: 10px; */
 }
 
 #footer-bottom p {
@@ -617,7 +595,7 @@ footer ul li:first-child {
     /* ------------------------------------------- */
     /* ---------- CUSTOM FRAMEWORK --------------- */
     /* ------------------------------------------- */
-    /* valido da 480px fino a 767px */
+    /* valido da 481px fino a 767px */
     .container {
         max-width: 840px;
     }
@@ -631,10 +609,12 @@ footer ul li:first-child {
     }
 
     /* ------------------------------------------- */
+    /* spazio per il testo */
     #signup-text p {
         width: 29%;
     }
 
+    /* spazio per le linee orizzontali ai lati del testo */
     #signup-text div {
         width: 33%;
     }
@@ -643,7 +623,7 @@ footer ul li:first-child {
 /* da 768px in su */
 @media screen and (min-width:768px) {
 
-    /* background da blu a immagine */
+    /* background passa da blu a immagine */
     #jumbo {
         background-image: url(https://www.digitalocean.com/assets//media/homepage/bg-home-1-d54581d7.jpg);
         background-position: bottom;
@@ -659,6 +639,7 @@ footer ul li:first-child {
         width: 696px;
     }
 
+    /* freccetina sinistra dello slider */
     .left-angle::before {
         content: "<";
         display: inline-block;
@@ -667,6 +648,7 @@ footer ul li:first-child {
         font-size: 50px;
     }
 
+    /* freccetina destra dello slider */
     .right-angle::after {
         content: ">";
         display: inline-block;
@@ -676,7 +658,7 @@ footer ul li:first-child {
         cursor: pointer;
     }
 
-    /* muovo le freccetine verso l'alto, per centrarle */
+    /* muovo le freccetine verso l'alto, per centrarle verticalmente*/
     #development .left-angle::before, #development .right-angle::after {
         position: relative;
         bottom: 110px;
@@ -691,6 +673,8 @@ footer ul li:first-child {
 
 /* tra 875px e 992px */
 @media screen and (min-width:875px) and (max-width:992px) {
+
+    /* aggiustamento centratura verticale */
     #jumbo-left-side {
         transform: translateY(30%);
     }
@@ -698,14 +682,11 @@ footer ul li:first-child {
 
 /* da 875px in su */
 @media screen and (min-width:875px) {
+
+    /* vario font-size al variare della dimensione dello screen */
     #jumbo-left-side h1 {
         font-size: 46px;
     }
-}
-
-/* da 960px in su */
-@media screen and (min-width:960px) {
-    /* footer da 2 a 5 colonne */
 }
 
 @media screen and (min-width:992px) {
@@ -716,6 +697,8 @@ footer ul li:first-child {
 
 /* da 1000px in su */
 @media screen and (min-width:1000px) {
+
+    /* vario font-size al variare della dimensione dello screen */
     #jumbo-left-side h1 {
         font-size: 54px;
     }
@@ -724,12 +707,12 @@ footer ul li:first-child {
 /* da 1050px in su */
 @media screen and (min-width:1050px) {
     #navbar-inline {
-        /* menu da hamburger a inline */
+        /* visualizzo menu inline */
         display: block;
     }
 
     #navbar-hamburger {
-        /* hamburger lascia posto a inline menu */
+        /* hamburger menu sparisce, lascia posto a inline menu */
         display: none;
     }
 
@@ -747,14 +730,18 @@ footer ul li:first-child {
 
 /* da 1200px in su */
 @media screen and (min-width:1200px) {
+
+    /* vario font-size al variare della dimensione dello screen */
     #jumbo-left-side h1 {
         font-size: 62px;
     }
 
+    /* spazio per il testo */
     #signup-text p {
         width: 28%;
     }
 
+    /* spazio per le linee orizzontali a fianco del testo  */
     #signup-text div {
         width: 34%;
     }
