@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 
     <header>
         <nav>
-            <div id="navbar-inline" class="">
+            <div id="navbar-inline">
 
                 <div id="navbar-top" class="clearfix">
                     <div id="top-left" class="pull-left">
@@ -65,7 +65,7 @@
                 <div class="row">
                     <div class="col-xs-12 clearfix">
                         <div class="pull-left">
-                            <a href="#"><img src="images/logo-white.png" alt="logo">
+                            <a href="#"><img src="images/logo-white.png" alt="logo"></a>
                         </div>
                         <div class="pull-right">
                             <i id="hamburger" class="fas fa-bars fa-2x"></i>
@@ -78,19 +78,21 @@
                 <div id="free-banner">
                     <a href="">💵<strong> Free credit active:</strong> Get started on DigitalOcean with a $50, 30-day credit for new users.</a>
                 </div>
-            </div> <!-- container -->
+            </div>
 
             <div class="container">
                 <div class="row">
                     <div id="deploy-text" class="col-xs-12 col-sm-6">
-                        <h1 class="fz40 fw-bold text-white">Welcome to the developer cloud</h1>
-                        <p class="fz24 text-white">We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+                        <div id="jumbo-left-side">
+                            <h1 class="fz40 fw-bold text-white">Welcome to the developer cloud</h1>
+                            <p class="fz24 text-white">We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-offset-1 col-sm-5">
                         <div id="deploy-form" class="bg-white ">
                             <h2 class="text-center fz30 text-black fw-bold">Deploy in seconds</h2>
 
-                            <form action="" name="">
+                            <form>
                                 <div class="form-group">
                                     <input class="fz20 form-control my-form-control" id="name" type="text" placeholder="Full name">
                                 </div>
@@ -101,23 +103,26 @@
                                     <input class="fz20 form-control my-form-control" id="phone" type="tel" placeholder="Create a password">
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" id="send" class="btn btn-lg btn-block bg-lightblue text-white">Create your account</button>
+                                    <button type="submit" id="send" class="btn btn-lg btn-block">Create your account</button>
                                 </div>
                             </form>
 
-                            <br>
-                            <p class="text-gray text-center">or sign up with</p>
-                            <div class="center-block">
-                                <a class="btn btn-default btn-lg text-black" href="#">Google</a>
-                                <a class="btn btn-default btn-lg text-black" href="#">GitHub</a>
+                            <div id="signup-text">
+                                <div></div>
+                                <p class="text-gray text-center">or sign up with</p>
+                                <div></div>
+                            </div>
+
+                            <div id="signup-buttons" class="center-block">
+                                <div class="clearfix"><a class="btn btn-default btn-lg btn-block fw-bold fz16" href="#"> <img class="pull-left" src="images/google-logo.png" alt="google logo">Google</a></div>
+                                <div class="clearfix"><a class="btn btn-default btn-lg btn-block fw-bold fz16" href="#"><img class="pull-left" src="images/github-logo.png" alt="github logo">GitHub</a></div>
                             </div>
                             <p class="text-gray text-center">By signing up yuo agree to the <a href="#">Term of service</a></p>
 
                         </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-
+                </div>
+            </div>
         </section>
 
         <section id="logolist" class="bg-gray">
@@ -144,11 +149,11 @@
                     <div class="col-xs-6 col-sm-2">
                         <img class="" src="https://www.digitalocean.com/assets/media/homepage/logos/splunk-06b17d75.png" alt="splunk">
                     </div>
-                </div><!-- row -->
-            </div><!-- container -->
+                </div>
+            </div>
 
             <div id="logolist-link" class="text-center">
-                <a class="" href="#">View customer stories &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
+                <a class="blu-nodec-link" href="#">View customer stories &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
             </div>
 
         </section>
@@ -197,8 +202,8 @@
                         <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
                     </div>
 
-                </div> <!-- row -->
-            </div><!-- container -->
+                </div>
+            </div>
 
         </section>
 
@@ -208,26 +213,26 @@
                 <h2 class="fw-bold text-black">Designed for developers</h2>
                 <p class="fz20">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
 
-                <div class="left-angle-before right-angle-after">
+                <div class="left-angle right-angle">
                     <img class="" src="https://www.digitalocean.com/assets/media/homepage/screenshot-create-kubernetes-cluster-4a930955.jpg" alt="cluster">
                 </div>
                 <p>Choose the machine type that’s right for your app – and spin up in 55 seconds or less.</p>
 
                 <ul class="list-inline list-unstyled">
                     <li>
-                        <div class="empty-circle "></div>
+                        <div class="circle empty-circle"></div>
                     </li>
                     <li>
-                        <div class="empty-circle fill-circle"></div>
+                        <div class="circle full-circle"></div>
                     </li>
                     <li>
-                        <div class="empty-circle"></div>
+                        <div class="circle empty-circle"></div>
                     </li>
                     <li>
-                        <div class="empty-circle"></div>
+                        <div class="circle empty-circle"></div>
                     </li>
                     <li>
-                        <div class="empty-circle"></div>
+                        <div class="circle empty-circle"></div>
                     </li>
                 </ul>
             </div>
@@ -235,12 +240,6 @@
         </section>
 
         <section id="built" class="bg-white">
-            <!-- *************************************************************** -->
-            <!-- NOTA: questa sezione ha 2 breakpoint che variano il layout: -->
-            <!-- a 480px e 960px, sono stati utilizzati invece i bkpt di bootstrap -->
-            <!-- a 768px e 992px, per semplicità anziche definirne di nuovi -->
-            <!-- *************************************************************** -->
-
 
             <div class="container">
                 <h2 class="text-black text-center fw-bold">Built for business</h2>
@@ -251,7 +250,7 @@
 
                         <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
 
-                        <a href="#">Security &nbsp;<i class="fas fa-angle-right text-lightblue"></i></a>
+                        <a class="blu-nodec-link" href="#">Security &nbsp;<i class="fas fa-angle-right text-lightblue"></i></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <img src="images/paper.png" alt="paper">
@@ -259,7 +258,7 @@
 
                         <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
 
-                        <a href="#">Pricing &nbsp;<i class="fas fa-angle-right text-lightblue"></i></a>
+                        <a class="blu-nodec-link" href="#">Pricing &nbsp;<i class="fas fa-angle-right text-lightblue"></i></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <img src="images/cuffia.png" alt="cuffia">
@@ -267,7 +266,7 @@
 
                         <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
 
-                        <a href="#">Support &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
+                        <a class="blu-nodec-link" href="#">Support &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <img src="images/cert.png" alt="cert">
@@ -275,7 +274,7 @@
 
                         <p>Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
 
-                        <a href="#">Compliance &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
+                        <a class="blu-nodec-link" href="#">Compliance &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
                     </div>
                 </div>
             </div>
@@ -313,7 +312,7 @@
                             <div class="col-xs-3 text-left">NYC1</div>
                             <div class="col-xs-6 text-left">New York, USA</div>
                             <div class="col-xs-3 text-right"><a href="#">Test speed &gt;</a></div>
-                        </div> <!-- row -->
+                        </div>
                     </div>
 
                     <div class="col-xs-12 col-md-6">
@@ -341,11 +340,11 @@
                             <div class="col-xs-3 text-left">TOR1</div>
                             <div class="col-xs-6 text-left">Toronto</div>
                             <div class="col-xs-3 text-right"><a href="#">Test speed &gt;</a></div>
-                        </div> <!-- row -->
+                        </div>
                     </div>
 
-                </div> <!-- row -->
-            </div><!-- container -->
+                </div>
+            </div>
 
         </section>
 
@@ -354,36 +353,35 @@
             <div class="container">
                 <h2 class="fw-bold text-black">Development teams love DigitalOcean</h2>
 
-                <p class="fz20">Easily organize your infrastructure with Projects. And with Teams, everyone can get their own account, with just the privileges they need to do their jobs.</p>
+                <p class="fz20">Easily organize your infrastructure with Projects. And with <a href="#">Teams</a>, everyone can get their own account, with just the privileges they need to do their jobs.</p>
 
-                <div class="left-angle-before right-angle-after">
+                <div class="left-angle right-angle">
                     <div class="jumbotron bg-white">
                         <img src="https://www.digitalocean.com/assets/media/homepage/teams/rockerbox-logo-51462da2.png" alt="rockerbox">
                         <p>“We have been able to make scaling the technical infrastructure of our business cost effective and&nbsp;efficient.”</p>
                         <p>Rick O'Toole</p>
                         <p>Co-founder and CTO</p>
-                        <a href="#">Read a story &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
+                        <a class="blu-nodec-link" href="#">Read story &nbsp;<i class="fas fa-angle-right text-lightblue"></i> </a>
                     </div>
                 </div>
                 <ul class="list-inline list-unstyled">
                     <li>
-                        <div class="empty-circle fill-circle"></div>
+                        <div class="circle full-circle"></div>
                     </li>
                     <li>
-                        <div class="empty-circle "></div>
+                        <div class="circle empty-circle"></div>
                     </li>
                     <li>
-                        <div class="empty-circle "></div>
+                        <div class="circle empty-circle"></div>
                     </li>
                 </ul>
             </div>
-
 
         </section>
 
         <section id="get-started" class="text-center">
 
-            <p class="fz30 fw-bold text-white">Get started now.</p>
+            <h4 class="fz30 fw-bold text-white">Get started now.</h4>
             <a class="btn btn-default signup-btn text-lightblue bg-white fz16" href="#">Create your account</a>
 
         </section>
@@ -391,9 +389,113 @@
     </main>
 
     <footer class="bg-black">
+        <div id="footer-top">
+            <div class="container">
+                <div class="row">
 
-        footer
-    </footer> -->
+                    <div class="col-xs-6 col-md-2 col-md-offset-1">
+                        <ul class="list-unstyled">
+                            <li>Company</li>
+                            <li><a class="" href="#">About</a></li>
+                            <li><a class="" href="#">Leadership</a></li>
+                            <li><a class="" href="#">Blog</a></li>
+                            <li><a class="" href="#">Careers</a></li>
+                            <li><a class="" href="#">Partners</a></li>
+                            <li><a class="" href="#">Referral Program</a></li>
+                            <li><a class="" href="#">Press</a></li>
+                            <li><a class="" href="#">Legal & Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-2">
+                        <ul class="list-unstyled">
+                            <li>Products</li>
+                            <li><a class="" href="#">Products Overview</a></li>
+                            <li><a class="" href="#">Droplets</a></li>
+                            <li><a class="" href="#">Kubernetes</a></li>
+                            <li><a class="" href="#">Managed Databases</a></li>
+                            <li><a class="" href="#">Spaces</a></li>
+                            <li><a class="" href="#">Marketplace</a></li>
+                            <li><a class="" href="#">Load Balancers</a></li>
+                            <li><a class="" href="#">Block Storage</a></li>
+                            <li><a class="" href="#">Tools & Integrations</a></li>
+                            <li><a class="" href="#">API</a></li>
+                            <li><a class="" href="#">Pricing</a></li>
+                            <li><a class="" href="#">Documentation</a></li>
+                            <li><a class="" href="#">Release Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-2">
+                        <ul class="list-unstyled">
+                            <li>Community</li>
+                            <li><a class="" href="#">Tutorials</a></li>
+                            <li><a class="" href="#">Meetups</a></li>
+                            <li><a class="" href="#">Q&A</a></li>
+                            <li><a class="" href="#">Write for DOnations</a></li>
+                            <li><a class="" href="#">Droplets for Demos</a></li>
+                            <li><a class="" href="#">Hatch Startup Program</a></li>
+                            <li><a class="" href="#">Shop Swag</a></li>
+                            <li><a class="" href="#">Research Program</a></li>
+                            <li><a class="" href="#">Currents Research</a></li>
+                            <li><a class="" href="#">Open Source</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-2">
+                        <ul class="list-unstyled">
+                            <li>Solutions</li>
+                            <li><a class="" href="#">Web & mobile apps</a></li>
+                            <li><a class="" href="#">Website hosting</a></li>
+                            <li><a class="" href="#">Big data</a></li>
+                            <li><a class="" href="#">Managed services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-md-3">
+                        <ul class="list-unstyled">
+                            <li>Contact</li>
+                            <li><a class="" href="#">Support</a></li>
+                            <li><a class="" href="#">Sales</a></li>
+                            <li><a class="" href="#">Report Abuse</a></li>
+                            <li><a class="" href="#">System Status</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer-top -->
+
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-md-6">
+                        <p><a href="#"><img class="pull-left" src="images/logo-on-black.png" alt="digitalocean small logo"></a>
+                            © 2019 DigitalOcean, LLC. All rights reserved.</p>
+                        <!-- <a href="#"><img class="pull-left" src="images/logo-on-black.png" alt="digitalocean small logo"></a>
+                        <div class="pull-left">
+                            <p> © 2019 DigitalOcean, LLC. All rights reserved.</p>
+                        </div> -->
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="pull-right" id="footer-social">
+                            <ul class="list-inline list-unstyled">
+                                <li><a href="#"><i class="fab fa-twitter fz20"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-square fz20"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram fz20"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube fz20"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in fz20"></i></a></li>
+                                <li><a href="#"><i class="fas fa-door-open fz20"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div> <!-- row -->
+            </div> <!-- container -->
+
+        </div>
+    </footer>
 
 </body>
 
