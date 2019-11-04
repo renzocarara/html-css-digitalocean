@@ -311,14 +311,14 @@ input::placeholder {
 
 #signup-buttons div:nth-child(1) {
     display: inline-block;
-    width: 46%;
-    margin-right: 2%;
+    width: 49.3%;
+    padding-right: 2%;
 }
 
 #signup-buttons div:nth-child(2) {
     display: inline-block;
-    width: 46%;
-    margin-left: 2%;
+    width: 49.3%;
+    padding-left: 2%;
 }
 
 /* **************** */
