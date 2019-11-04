@@ -285,17 +285,17 @@ input::placeholder {
 
 #signup-text p {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     white-space: nowrap;
 }
 
-/* linee orizzontali a fianco del testo  */
-#signup-text div {
+#signup-text p::before, #signup-text p::after {
+    content: '';
     display: inline-block;
     position: relative;
-    bottom: 5px;
+    bottom: 4px;
     border-bottom: 1px solid gray;
-    width: 23%;
+    width: 28%;
 }
 
 #signup-buttons div a {
@@ -372,7 +372,7 @@ input::placeholder {
 
 #deploy-list a {
     text-decoration: none;
-    color: #4e5f83;
+    color: rgba(3, 27, 78, .5);
 }
 
 #deploy-list li:nth-child(1) a {
@@ -617,17 +617,6 @@ footer ul li:first-child {
     .my-col-12 {
         width: 100%;
     }
-
-    /* ------------------------------------------- */
-    /* spazio per il testo */
-    #signup-text p {
-        width: 29%;
-    }
-
-    /* spazio per le linee orizzontali ai lati del testo */
-    #signup-text div {
-        width: 33%;
-    }
 }
 
 /* da 768px in su */
@@ -744,15 +733,5 @@ footer ul li:first-child {
     /* vario font-size al variare della dimensione dello screen */
     #jumbo-left-side h1 {
         font-size: 62px;
-    }
-
-    /* spazio per il testo */
-    #signup-text p {
-        width: 28%;
-    }
-
-    /* spazio per le linee orizzontali a fianco del testo  */
-    #signup-text div {
-        width: 34%;
     }
 }
