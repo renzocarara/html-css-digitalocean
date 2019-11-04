@@ -501,10 +501,6 @@ input::placeholder {
     max-width: 970px;
 }
 
-#development .container>div {
-    position: relative;
-}
-
 #development .jumbotron {
     display: inline-block;
     max-width: 740px;
