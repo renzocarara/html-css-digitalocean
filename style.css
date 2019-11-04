@@ -226,6 +226,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
     padding: 8px 16px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #free-banner a {
@@ -235,7 +236,6 @@ h2 {
 #deploy-form {
     padding: 32px;
     border-radius: 5px;
-    margin-top: 30px;
 }
 
 #deploy-form p:not(last-child) {
@@ -664,9 +664,14 @@ footer ul li:first-child {
     }
 
     /* centro verticalmente la scritta a sinistra rispetto al contenitore del form che sta a destra */
-    #jumbo-left-side {
+    #deploy-text {
         position: absolute;
+        top: 0;
         transform: translateY(50%);
+    }
+
+    #jumbo .container .row {
+        position: relative;
     }
 }
 
@@ -674,8 +679,8 @@ footer ul li:first-child {
 @media screen and (min-width:875px) and (max-width:992px) {
 
     /* aggiustamento centratura verticale */
-    #jumbo-left-side {
-        transform: translateY(30%);
+    #deploy-text {
+        transform: translateY(35%);
     }
 }
 
@@ -683,7 +688,7 @@ footer ul li:first-child {
 @media screen and (min-width:875px) {
 
     /* vario font-size al variare della dimensione dello screen */
-    #jumbo-left-side h1 {
+    #deploy-text h1 {
         font-size: 46px;
     }
 }
@@ -698,7 +703,7 @@ footer ul li:first-child {
 @media screen and (min-width:1000px) {
 
     /* vario font-size al variare della dimensione dello screen */
-    #jumbo-left-side h1 {
+    #deploy-text h1 {
         font-size: 54px;
     }
 }
@@ -731,7 +736,7 @@ footer ul li:first-child {
 @media screen and (min-width:1200px) {
 
     /* vario font-size al variare della dimensione dello screen */
-    #jumbo-left-side h1 {
+    #deploy-text h1 {
         font-size: 62px;
     }
 }
